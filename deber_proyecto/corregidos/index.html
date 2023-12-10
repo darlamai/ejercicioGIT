@@ -7,8 +7,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/deber_proyecto/corregidos/style_desktop.css" media="screen and (min-width: 320px)" />
-    <link rel="stylesheet" href="/deber_proyecto/corregidos/style_mobile.css" media="screen and (max-width: 320px)" />
+    <link rel="stylesheet" href="../corregidos/style_desktop.css" media="screen and (min-width: 320px)" />
+    <link rel="stylesheet" href="../corregidos/style_mobile.css" media="screen and (max-width: 320px)" />
   </head>
   <body>
     <header>
@@ -27,29 +27,30 @@
             <a class="active">ESP</a>
             <a>ENG</a>
             <div class="bar large"></div>
-            <img src="/deber_proyecto/img/menu.png" alt="" srcset="" />
+            <img src="../img/menu.png" alt="" srcset="" />
           </div>
         </div>
       </nav>
     </header>
     <main>
-
-     
       <div class="etiquetas_intro">
-        <img src="/deber_proyecto/img/redes_sociales1.png" alt="izquierda1_2" class="redes_sociales">
+        <img src="../img/redes_sociales1.png" alt="izquierda1_2" class="redes_sociales">
         <form action="#" method="GET" class="search-form">
           <div class="search-container">
             <input type="text" placeholder="Ex. Villa Budapest" class="search-bar">
           </div>
         </form>
-        <span>Luxury</span>
-        <p>
-          Real State
-        </p>
+        <div class="texto-etiquetas-intro">
+          <span>Luxury</span>
+          <p>
+            Real State
+          </p>
+
+        </div>
+
         <div class="main-form">
            <button> -> View all properties</button>
         </div>
-
       </div>
     </main>
 
@@ -101,50 +102,79 @@
     </div>
 
 
-    <div class="bloque_properties_sale_rent">
+    <div class="bloque_properties_sale">
         <div class="gallery1">
-          <img src="../img/properties_sale1.jpg" alt="Imagen 1" data-text="Desconicod">
-            <img src="../img/properties_sale2.png" alt="Imagen 2" data-text="England Glasgow">
-            <img src="../img/properties_sale3.PNG" alt="Imagen 3" data-text="France Marseilles">
+          <div class="active">
+            <img src="../img/properties_sale1.png" alt="Imagen 1">
           </div>
+          <div class="propetie-imagen2">
+            <img src="../img/properties_sale2.png" alt="Imagen 2">
+            <p> England Glasgow </p>
+          </div>
+          <div class="propetie-imagen3">
+            <img src="../img/properties_sale3.png" alt="Imagen 3">
+            <p> France Marseilles</p>
+          </div>
+        </div>
     
         <div class="text-section-sale">
-          <!-- Tu texto aquí -->
-          <p>
-            Worldwide Gallery
-          </p>
-          <h2>
-            Properties for sale
-          </h2>
-          <img src="../img/view_properties.png" alt="Imagen 1" class="view_properties_1">
+          <div class="text-sale">
+            <span>
+              Worldwide Gallery
+            </span>
+            <h2>
+              Properties for sale
+            </h2>
+          </div>
+
+          <div class="button-sale">
+            <button class="previo"><img src='../img/flechas_sale_rent.png' alt="" srcset=""/>  Prev </button>
+            <button class="primario">View all properties</button>
+            <button class="next">Next  <img src='../img/flechas_dere_sale_rent.png'> </button>
+          </div>
+
         </div>
 
-        <div class="text-section-rent">
-          <!-- Tu texto aquí -->
-          <p>
+        </div>
+
+
+  <div class="bloque_properties_rent">
+
+      <div class="text-section-rent">
+        <div class="textos-rent">
+          <span>
             Worldwide Gallery
-          </p>
+          </span>
           <h2>
             Properties for rent
           </h2>
           <p>
             In an ultimate jetsetter location or a forever home, our experts have the expertise it takes to knowledgeably advise you at every stage of the property cycle.
           </p>
-          <img src="../img/view_properties.png" alt="Imagen 2" class="view_properties_2">
         </div>
-
-          <div class="gallery2">
-    
-            <img src="../img/properties_rent1.png" alt="Imagen 1" height="10" width="10">
-              <img src="../img/properties_rent2.png" alt="Imagen 2">
-              <img src="../img/properties_rent3.png" alt="Imagen 3">
-        
+        <div class="botones-rent">
+          <button class="previo-rent"><img src='../img/flechas_sale_rent.png' alt="" srcset=""/>  Prev </button>
+          <button class="primario-rent">View all properties</button>
+          <button class="next-rent">Next  <img src='../img/flechas_dere_sale_rent.png'> </button>
+      </div>
+    </div>
+          <div class="gallery2-rent">
+            <div class="rentimg1">
+              <img src="../img/properties_rent1.png" alt="Imagen-rent 1">
+              <p>France Carcassonne</p>
+            </div>
+            <div class="rentimg2">
+              <img src="../img/properties_rent2.png" alt="Imagen-rent 2">
+              <p>Germany Munich</p>
+            </div>
+            <div class="rentimg3">
+              <img src="../img/properties_rent3.png" alt="Imagen-rent 3">
+            </div>
           </div>
     </div>
 
-  </div>
 
-
+  <!--
   <div class="developments-mobile">
     <br>
     <b>Luxury properties</b>
@@ -162,9 +192,9 @@
     <h2>Location</h2>
     <br>
     <img src="../img/location_mobile1.jpg" alt="Imagen 3" class="imagen2-developments-mobile">
-  </div>
+  </div> -->
 
-  <div class="services-mobile">
+  <!-- <div class="services-mobile">
     <br>
     <img src="../img/sello_services_mobile.png" alt="Imagen 2" class="imagen1-services-mobile">
     <img src="../img/line_services_mobile.png" alt="Imagen 2" class="imagen2-services-mobile">
@@ -195,44 +225,79 @@
 
     <img src="../img/sala_services_mobile.jpg" alt="Imagen 2" class="imagen2-services-mobile">
 
-  </div>
+  </div> -->
 
 
-  </div>
-  <div class="developments-text">
-    <b>Luxury properties</b>
-    <h1>Developments</h1>
-    <br>
-    <br>
-    <br>
- 
+  </div >
+
+  <div class="developments">
+
+    <div class="developments-text">
+      <b>Luxury properties</b>
+      <h1>Developments</h1>
+      <br>
+      <br>
+      <br>
+    </div>
+
+
     <div class="grid-container-developments">
-      <!-- Primera fila: Imágenes -->
-      <div class="image"><img src="../img/developments1.png" alt="Imagen 1"></div>
-      <div class="image"><img src="../img/developments2.png" alt="Imagen 2"></div>
-      <div class="image"><img src="../img/developments3.png" alt="Imagen 3"></div>
-      <div class="image"><img src="../img/developments4.png" alt="Imagen 4"></div>
-  
-      <!-- Segunda fila: Nombres -->
-      <div class="name">The Surf Row <h2>Surfside</h2></div>
-      <div class="name">Indigo <h2>Vero Beach</h2></div>
-      <div class="name">Rosewood-Baha Mar <h2> Nassau, the Bahamas</h2></div>
-      <div class="name">St.Regis - The Astor Tower <h2> Brickell,Miami</h2></div>
-  
-      <!-- Tercera fila: Imágenes -->
-      <div class="image"><img src="../img/developments5.jpg" alt="Imagen 5"></div>
-      <div class="image"><img src="../img/developments6.jpg" alt="Imagen 6"></div>
-      <div class="image"><img src="../img/developments7.jpg" alt="Imagen 7"></div>
-      <div class="image"><img src="../img/developments8.jpg" alt="Imagen 8"></div>
-  
-      <!-- Cuarta fila: Nombres -->
-      <div class="name">Giralda Place <h2> Coral Gables</h2></div>
-      <div class="name">St. Regis - The William Tower <h2>Brickell, Miami</h2></div>
-      <div class="name">Solterre at Cockleshell Bay <h2> St. Kitts and nevis</h2></div>
-      <div class="name">Urbin <h2> Coconut Grove</h2></div>
+
+      <div class="dev-primera-fila">
+        <div class="dev1">
+          <img src="../img/developments1.png" alt="Imagen 1">
+          <p>The Surf Row <h2>Surfside</h2></p>
+        </div>
+        <div class="dev2">
+          <img src="../img/developments2.png" alt="Imagen 2">
+          <p>Indigo <h2>Vero Beach</h2></p>
+        </div>
+
+        <div class="dev3">
+          <img src="../img/developments3.png" alt="Imagen 3">
+          <p>Rosewood-Baha Mar <h2> Nassau, the Bahamas</h2></p>
+        </div>
+        <div class="dev4">
+          <img src="../img/developments4.png" alt="Imagen 4">
+          <p>St.Regis - The Astor Tower <h2> Brickell,Miami</h2></p>
+        </div>
+      </div>
+
+
+      <div class="dev-segunda-fila">
+        <div class="dev5">
+          <img src="../img/developments5.jpg" alt="Imagen 5">
+          <p>Giralda Place <h2> Coral Gables</h2></p>
+        </div>
+        <div class="dev6">
+          <img src="../img/developments6.jpg" alt="Imagen 6">
+          <p>St. Regis - The William Tower <h2>Brickell, Miami</h2></p>
+        </div>
+
+        <div class="dev7">
+          <img src="../img/developments7.jpg" alt="Imagen 7">
+          <p>Solterre at Cockleshell Bay <h2> St. Kitts and nevis</h2></p>
+        </div>
+        <div class="dev8">
+          <img src="../img/developments8.jpg" alt="Imagen 8">
+          <p>Urbin <h2> Coconut Grove</h2></p>
+        </div>
+      </div>
+    
+   
     </div>
   </div>
 
+
+
+
+
+
+
+  </div>
+ 
+ 
+    
   <div>
      <div class="third-section">
       <div class="image-block">
@@ -318,6 +383,6 @@
         <div class="footer-bar"></div>
         <p class="copyright">Copyright © 2022</p>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>
