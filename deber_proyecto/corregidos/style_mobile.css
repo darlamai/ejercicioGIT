@@ -16,92 +16,89 @@
     z-index: 100;
     overflow: hidden; 
   }
-  
-  main {
-    position: relative;
-    overflow: hidden;
+
+
+
+
+  .etiquetas_intro {
+    grid-column: span 12; 
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);  
   }
   
   
-  main {
-    background-image: url('../img/casa_principal2.png');
-    background-size: cover;
-    background-position: top -195px right 0;
-    height: 42vh;
-    padding-top: 100px; 
-    overflow: hidden;
-  }
-      
-  .etiquetas_intro span{
-    position: relative;
-    z-index: 1;
-    text-align: left;
-    color: gray; 
-    font-size: 25px;
-    margin-top:130px;
-    left:50px;
-    display: block; 
-    clear: both; 
+  .texto-etiquetas-intro {
+    position: absolute;
+    grid-column: span 12; 
+    top:64%;
+    grid-column-start: 4;
+    padding: 20px;
+    left: 5%;
   }
   
   
-  
-  .etiquetas_intro p{
-    position: relative;
-    z-index: 1;
-    text-align: left;
+  .texto-etiquetas-intro p {
+    margin: 0; 
     color: white; 
-    font-size: 40px;
-    margin-top: 12px;
-    left:50px;
+    font-size: 65px; 
   }
-
-
-
-
+  
+  .texto-etiquetas-intro span{
+    margin: 0;
+    color: gray;
+    font-size: 45px;
+  
+  }
+  
+  .main-form {
+    position: absolute;
+    grid-column: span 12; 
+    grid-column-start: 4; 
+    padding: 10px; 
+    top:85%;
+    left: 5%;
+  }
+  
+  
   .main-form button {
+    position:absolute;
+    z-index: 1;
     background-color: transparent;
     border: solid 2px white;
     border-radius: 20px;
-    padding: 6px 32px;
-    width: fit-content;
+    padding:6px 50px;
     color: white;
-    justify-self: end;
-    bottom:0;
+    white-space: nowrap;
+    font-size: 10px;
   }
   
-  
-  
-  .redes_sociales {
+  .redes-sociales-main {
     position: absolute;
-    left: 25px; 
-    top: 200px; 
-    z-index: 1;
-    height:35% 
+    top:48%;
+    left:3%
   }
-  
-  
   
   
   .search-container {
-    position: relative;
-    top: 5%; 
-    right: -575px; 
-    z-index: 1000; 
+    position: absolute;
+    grid-column: 1 / -1; 
+    padding: 10px;
+    top: 40%;
+    right:10%; 
   }
   
   .search-bar {
-    padding: 8px 30px 8px 10px; 
+    padding: 8px 30px 8px 10px;
     border: 1px solid #ccc;
+    border-color: white;
     border-radius: 20px;
     width: 200px;
-    background-image: url('/img/Lupa.png');
+    background-image: url('../img/Lupa.png');
     background-repeat: no-repeat;
     background-color: transparent;
-    background-position: 95% 50%;  
-    background-size: 20px 20px; 
+    background-position: 95% 50%; 
+    background-size: 20px 20px;
   }
-  
   
   
   
@@ -158,19 +155,11 @@
     color: rgb(198, 198, 198);
   }
   
-  /* main img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    object-position: top -300px right 0;
-    overflow-x: hidden;
-  } */
   
   /* SALE */
   
   .bloque_properties_sale_mobile {
-    display: none; /* Inicialmente oculto */
-    /* Otros estilos para este bloque */
+    display: none; 
   }
   
   .contenedor-imagenes-mobile1 {
@@ -258,22 +247,130 @@
     font-style: normal; 
 }
 
-.imagen2-services-mobile{
-    height: 50%;
-}
 
-
-
-.redes_sociales_mobile {
-    display: flex; 
-    flex-wrap: nowrap; 
+  .service-mobile-imagenes {
+    position: relative;
+    width: 100%;
+  }
+  
+  .imagen2-services-mobile,
+  .imagen33-services-mobile {
+    width: 100%; 
+    display: block;
+  }
+  
+  .imagen33-services-mobile {
     position: absolute;
-    top:650px;
-    gap:15px;
+    top: 65%; 
+    left: 50%; 
+    transform: translate(-50%, -50%) translateX(20%);  
   }
 
 
+  .news-mobile {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+  }
+  
+  /* Estilo del contenido */
+  .footer-textos-mobile,
+  .footer-form-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 15px; 
+  }
 
+  .footer-textos-mobile span{
+    color: #DF991B;
+  }
+  
+  .footer-form-mobile button {
+    background-color: transparent;
+    color: #DF991B;
+    border: solid 2px #DF991B;
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .footer-form-mobile span{
+    color: #DF991B;
+  }
+  
+
+  .footer-form-mobile input {
+    margin-top: 5px;
+    background-color: transparent;
+    border: solid 2px grey;
+    border-radius: 20px;
+    padding: 6px 16px;
+    width: 100%;
+    bottom: 0;
+  }
+
+
+  .mobile-info-footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .mobile-final-logo {
+    text-align: center;
+  }
+
+  .mobile-final-logo img {
+    width: 100px; 
+    height: auto; 
+  }
+  
+  .text-mobile-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  
+  .text-mobile-info > div {
+    padding: 10px;
+  }
+  
+  .redes_sociales_mobile {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  
+  .redes_sociales_mobile img {
+    height: auto;
+  }
+
+  .bar-mobile-foot {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    margin-top: 20px;
+  }
+  
+ 
+  .copyright-mobile {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+  }
+  .copyright-mobile p{
+   font-size: 10px;
+  }
+  
+  
 
 
 
@@ -305,13 +402,35 @@
     .menu div {
       display: none;
     }
+
+    main {
+      position: relative;
+      background-image: url('../img/imagen-mobile.png');
+      background-position: center top;
+      background-size: cover;
+      width:100vw;
+      height:100vh;
+      overflow-x: hidden;
+      overflow: hidden;
+      padding-bottom: 85%;
+      margin-bottom: 35px;
+    }
+
+    .redes-sociales-main
+    {
+      display: none;
+    }
   
     main img {
-      object-position: center;
+      object-position:center;
     }
-    .bloque_properties_sale_rent{
+    .bloque_properties_sale{
         display: none;
     }
+
+    .bloque_properties_rent{
+      display: none;
+  }
   
   
     .bloque_properties_sale_mobile {
@@ -338,9 +457,27 @@
     .info{
         display:none;
     }
+    .footer-text{
+      display: none;
+    }
 
+    .footer-form-mobile{
+      display: block;
+    }
+    .news-mobile{
+      display: block;
+    }
 
+    .footer-textos-mobile{
+      display: block;
+    }
+    .bar-mobile-foot{
+      display: block;
+    }
 
+    .footer-form-mobile span{
+      display: block;
+    }
 
 
   }
