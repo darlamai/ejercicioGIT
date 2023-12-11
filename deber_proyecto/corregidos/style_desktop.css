@@ -29,7 +29,6 @@ main {
   overflow: hidden;
   padding-bottom: 85%;
   margin-bottom: 35px;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .etiquetas_intro {
@@ -99,10 +98,15 @@ main {
   right:10%; 
 }
 
+.search-bar::placeholder {
+  color: white; /* Cambia #FF0000 al color que desees */
+}
+
 .search-bar {
   padding: 8px 30px 8px 10px;
   border: 1px solid #ccc;
   border-color: white;
+  color: white;
   border-radius: 20px;
   width: 200px;
   background-image: url('../img/Lupa.png');
