@@ -1,0 +1,60 @@
+
+<!--ELABORADO POR: DARLYN LUDEÑA -->
+<!--FECHA: 27/01/2024 -->
+<!--ORDENAR ELEMENTOS DE UN ARREGLO DE MAYOR A MENOR  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let arregloIngresado=prompt("Ingrese los elementos del arreglo separado por comas:")
+
+        let arreglo=arregloIngresado.split(',');
+
+        let arreglo_numeros=[]
+
+        for (let i=0;i<arreglo.length;i++){
+            let number_element = parseFloat(arreglo[i]);
+
+            if(!isNaN(number_element)){
+
+                arreglo_numeros.push(number_element)
+
+            }
+            
+        }
+
+        for(let i=0;i<arreglo_numeros.length;i++){
+            for(let j=0;j<arreglo_numeros.length-i-1;j++){
+                if(arreglo_numeros[j]<arreglo_numeros[j+1]){
+                    let tmp=arreglo_numeros[j+1];
+                    arreglo_numeros[j+1]=arreglo_numeros[j];
+                    arreglo_numeros[j]=tmp
+                }
+            }
+        }
+
+        // Imprimir el arreglo de números ordenado
+        console.log("ARREGLO CON LOS NÚMEROS ORDENADOS DE MAYOR A MENOR");
+        for (let i = 0; i < arreglo_numeros.length; i++) {
+            console.log(arreglo_numeros[i]);
+        }
+
+
+
+
+
+        
+    
+    
+    </script>
+    
+</body>
+
+</html>

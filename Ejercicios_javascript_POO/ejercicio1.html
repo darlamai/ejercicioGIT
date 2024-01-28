@@ -1,0 +1,53 @@
+
+<!-- ELABORADO POR: DARLYN LUDEÑA -->
+<!--FECHA: 27/01/2024 -->
+<!--SERIE DE FIBONACCI -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let var1=0
+        let var2=1
+        let numeroDeElementos
+        do{
+            numeroDeElementos=prompt("Ingrese el número de elementos:");
+            numeroDeElementos=parseInt(numeroDeElementos);
+
+            if (isNaN(numeroDeElementos) || numeroDeElementos<=0)
+            {
+                alert("Por favor, ingrese un número válido mayor que cero.")
+            }
+
+        }while(isNaN(numeroDeElementos) || numeroDeElementos<=0);
+
+        console.log(`SERIE DE FIBONACCI CON ${numeroDeElementos} ELEMENTOS.`)
+        
+        for(let i=1;i<=numeroDeElementos;i++){
+            if(i==1)
+            {
+                console.log(var1);
+            }
+            else if(i==2)
+            {
+                console.log(var2);
+            }
+            else{
+            let var3=var1+var2
+            var1=var2
+            var2=var3
+            let resultado=var3
+            console.log(resultado)
+            }
+        }
+        
+    </script>
+    
+</body>
+
+</html>
